@@ -1,5 +1,6 @@
  // Image manipulation logic from github.com/jwill/psychic-lana
 
+ // 数字图像处理，将一个像素的rgb以及透明度根据不同的算法来计算
 function manipulate(type, r, g, b, a) {
   
   var func = function() {};

@@ -110,7 +110,7 @@
     }
 
     // save the data about this frame for future comparison
-    lastTime = now;
+    lastTime = now; 
     lastDiff = frameTimeDiff;
   };
 })();

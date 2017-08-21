@@ -1,8 +1,9 @@
 importScripts('imageManips.js');
 
 this.onmessage = function(e) {
-  var imageData = e.data.imageData;
-  var type = e.data.type;
+  console.log(e.data);
+  var imageData = e.data[0];
+  var type = e.data[1];
 
   try {
     length = imageData.data.length / 4;
@@ -19,6 +20,7 @@ this.onmessage = function(e) {
     }
     postMessage(imageData);
   } catch (e) {
+    console.log(e);
     function ManipulationException(message) {
       this.name = "ManipulationException";
       this.message = message;
